@@ -9,10 +9,45 @@
 }
 
 .page-header .container {
-    min-height: 60px;
     display: flex;
     align-items: center;
   }
+
+  @media screen and (max-width:767px) {
+    .page-header .container {
+      min-height: 60px;
+    }
+  }
+
+  @media screen and (max-width:1600px) {
+    .page-header .container {
+      min-height: 80px;
+    }
+  }
+
+  .site-navigation {
+    display: flex;
+    
+  }
+  
+  /* Logo */
+.site-navigation__logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    
+    align-items: center;
+  }
+  
+.site-navigation__label {
+    color: var(--accent-color);
+
+    &:last-child{
+        color: var(--color);
+    }
+}   
 
   .site-navigation__list,
   .site-contacts {
@@ -48,7 +83,6 @@
   }
   
   .menu-toggle {
-    min-height: 40px;
     min-width: 40px;
     display: flex;
     align-items: center;

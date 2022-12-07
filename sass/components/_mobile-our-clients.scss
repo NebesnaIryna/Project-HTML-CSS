@@ -5,10 +5,13 @@
     text-align: center;
     color: var(--title-text-color);
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .regular-customers {
+    
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     gap: 30px;
     padding: 0;
@@ -16,21 +19,17 @@
   }
 
   .regular-customers__item{
-    margin-top: 30px;
-
-    &:first-child{
-        margin-top: 0;
-    }
+    width: 210px;
   }
   
   .regular-customers__link {
     display: flex;
+    justify-content: center;
     padding: 15px 31px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     background-color: transparent;
     transition: border-color var(--timing-function);
-    margin-top: 30px;
 
     &:hover,
     &:focus{
