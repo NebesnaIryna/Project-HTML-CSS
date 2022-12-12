@@ -124,6 +124,14 @@
           margin-top: 20px;
         }
 
+        .footer-form {
+          margin-left: auto;
+        }
+        
+        .footer-form__thumb{
+          display: flex;
+        }
+        
         .footer-network {
           margin-left: 70px;
         }
@@ -132,7 +140,4 @@
           padding-top: 12px;
         }
 
-        .footer-form__thumb{
-          display: flex;
-        }
       }

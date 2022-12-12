@@ -36,6 +36,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -1194,16 +1196,19 @@ p {
   .footer-content__address {
     margin-top: 20px;
   }
-  .footer-network {
-    margin-left: 70px;
-  }
-  .footer-network__text {
-    padding-top: 12px;
+  .footer-form {
+    margin-left: auto;
   }
   .footer-form__thumb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer-network {
+    margin-left: 70px;
+  }
+  .footer-network__text {
+    padding-top: 12px;
   }
 }
 .footer-network__text {
@@ -1247,10 +1252,6 @@ p {
 
 .footer-social-network__icon {
   fill: var(--secondary-color);
-}
-
-.footer-form {
-  margin-left: auto;
 }
 
 .footer-form__text {
