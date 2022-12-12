@@ -3,16 +3,7 @@
     padding: 0;
     margin: 0;
   }
-  
-  .precedence__item {
-    flex-basis: calc((100% - 90px) / 4);
-    margin-top: 30px;
 
-    &:first-child{
-        margin-top: 0;
-    }
-  }
-  
   .precedence__icon {
     margin-bottom: 30px;
     background: #f5f4fa;
@@ -27,7 +18,7 @@
     color: var(--title-text-color);
     margin: 0;
     padding-bottom: 10px;
-    text-align: center;
+    
   }
   
   .precedence__text {
@@ -36,3 +27,41 @@
     margin: 0;
   }
   
+
+  
+  @media screen and (max-width:767px) {
+    .precedence__title{
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:1199px){
+    .precedence{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    .precedence__item {
+      flex-basis: calc((100% - 60px) / 2);
+    }
+
+    .precedence__icon{
+      padding: 25px 144px;
+    }
+  }
+
+  @media screen and (min-width:1200px) and (max-width:1600px) {
+    .precedence {    
+      display: flex;
+      gap: 30px;
+  }
+
+    .precedence__item {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+
+    .precedence__icon {
+      padding: 25px 100px;
+    }
+}
