@@ -225,8 +225,8 @@
             <li  class="gallery__item"> 
               <img
                 class="gallery__image"
-                srcset="img\precedence\process-writing-code_370.jpg 1x img\precedence\process-writing-code_370@2x.jpg 2x"
-                src="img\precedence\process-writing-code_370.jpg"
+                srcset="img/precedence/process-writing-code_370.jpg 1x img/precedence/process-writing-code_370@2x.jpg 2x"
+                src="img/precedence/process-writing-code_370.jpg"
                 alt="Process writing code"
                 width="370"
                 height="294"
@@ -238,8 +238,8 @@
             <li  class="gallery__item">  
               <img
                 class="gallery__image"
-                srcset="img\precedence\development-of-a-mobile-application_370.jpg 1x img\precedence\development-of-a-mobile-application_370@2x.jpg 2x"
-                src="img\precedence\development-of-a-mobile-application_370.jpg"
+                srcset="img/precedence/development-of-a-mobile-application_370.jpg 1x img/precedence/development-of-a-mobile-application_370@2x.jpg 2x"
+                src="img/precedence/development-of-a-mobile-application_370.jpg"
                 alt="Development of a mobile application"
                 width="370"
                 height="294"
@@ -251,8 +251,8 @@
             <li class="gallery__item">
               <img
                 class="gallery__image"
-                srcset="img\precedence\color-scheme_370.jpg 1x  img\precedence\color-scheme_370@2x.jpg 2x"
-                src="img\precedence\color-scheme_370.jpg"
+                srcset="img/precedence/color-scheme_370.jpg 1x  img/precedence/color-scheme_370@2x.jpg 2x"
+                src="img/precedence/color-scheme_370.jpg"
                 alt="Color scheme"
                 width="370"
                 height="294"
@@ -271,19 +271,24 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="portfolio-team">
             <li class="portfolio-team__item">
-              <img
-                srcset="
-                img\team\ihor-demyanenko-photo(270).jpg 270w,
-                img\team\ihor-demyanenko-photo(354).jpg 354w,
-                img\team\ihor-demyanenko-photo(450).jpg 450w,
-                img\team\ihor-demyanenko-photo(540).jpg 540w,
-                img\team\ihor-demyanenko-photo(708).jpg 708w,
-                img\team\ihor-demyanenko-photo(900).jpg 900w"
-                sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
-                src="img\team\ihor-demyanenko-photo(270).jpg 270w"
-                alt="Ihor Demyanenko photo"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img\team\ihor-demyanenko-photo(270).jpg 1x, img/team/ihor-demyanenko-photo(540).jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/team/ihor-demyanenko-photo(354).jpg 1x, img/team/ihor-demyanenko-photo(708).jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/team/ihor-demyanenko-photo(450).jpg 1x, img/team/ihor-demyanenko-photo(900).jpg 2x"
+                />
+
+                <img src="img/team/ihor-demyanenko-photo(270).jpg" alt="Ігор Дем'яненко" />
+              </picture>
+            
               <div class="portfolio-team__content">
                 <h3 class="portfolio-team__name">Ігор Дем'яненко</h3>
                 <p class="portfolio-team__text">Product Designer</p>
@@ -320,19 +325,24 @@
               </ul>
             </li>
             <li class="portfolio-team__item">
-              <img
-              srcset="
-              img\team\olga-repina-photo(270).jpg 270w,
-              img\team\olga-repina-photo(354).jpg 354w,
-              img\team\olga-repina-photo(450).jpg 450w,
-              img\team\olga-repina-photo(540).jpg 540w,
-              img\team\olga-repina-photo(708).jpg 708w,
-              img\team\olga-repina-photo(900).jpg 900w"
-              sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
-              src="img\team\olga-repina-photo(270).jpg 270w"
-              alt="Olga Repina photo"
-              loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img\team\olga-repina-photo(270).jpg 1x, img/team/olga-repina-photo(540).jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/team/olga-repina-photo(354).jpg 1x, img/team/olga-repina-photo(708).jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img/team/olga-repina-photo(450).jpg 1x, img/team/olga-repina-photo(900).jpg 2x"
+                />
+
+                <img src="img/team/olga-repina-photo(270).jpg" alt="Ольга Рєпіна" />
+              </picture>
+              
               <div class="portfolio-team__content">
                 <h3 class="portfolio-team__name">Ольга Рєпіна</h3>
                 <p class="portfolio-team__text">Frontend Developer</p>
@@ -369,19 +379,24 @@
               </ul>
             </li>
             <li class="portfolio-team__item">
-              <img
-              srcset="
-              img\team\mykola-tarasov-photo(270).jpg 270w,
-              img\team\mykola-tarasov-photo(354).jpg 354w,
-              img\team\mykola-tarasov-photo(450).jpg 450w,
-              img\team\mykola-tarasov-photo(540).jpg 540w,
-              img\team\mykola-tarasov-photo(708).jpg 708w,
-              img\team\mykola-tarasov-photo(900).jpg 900w"
-              sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
-              src="img\team\mykola-tarasov-photo(270).jpg 270w"
-              alt="Mykola Tarasov photo"
-              loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img\team\mykola-tarasov-photo(270).jpg 1x, img\team\mykola-tarasov-photo(540).jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img\team\mykola-tarasov-photo(354).jpg 1x, img\team\mykola-tarasov-photo(708).jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img\team\mykola-tarasov-photo(450).jpg 1x, img\team\mykola-tarasov-photo(900).jpg 2x"
+                />
+
+                <img src="img/team/olga-repina-photo(270).jpg" alt="Микола Тарасов" />
+              </picture>
+              
               <div class="portfolio-team__content">
                 <h3 class="portfolio-team__name">Микола Тарасов</h3>
                 <p class="portfolio-team__text">Marketing</p>
@@ -418,19 +433,24 @@
               </ul>
             </li>
             <li class="portfolio-team__item">
-              <img
-              srcset="
-              img\team\mykhailo-yermakov-photo(270).jpg 270w,
-              img\team\mykhailo-yermakov-photo(354).jpg 354w,
-              img\team\mykhailo-yermakov-photo(450).jpg 450w,
-              img\team\mykhailo-yermakov-photo(540).jpg 540w,
-              img\team\mykhailo-yermakov-photo(708).jpg 708w,
-              img\team\mykhailo-yermakov-photo(900).jpg 900w"
-              sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
-              src="img\team\mykhailo-yermakov-photo(270).jpg 270w"
-              alt="Mykhailo Yermakov photo"
-              loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img\team\mykhailo-yermakov-photo(270).jpg 1x, img\team\mykhailo-yermakov-photo(540).jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img\team\mykhailo-yermakov-photo(354).jpg 1x, img\team\mykhailo-yermakov-photo(708).jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="img\team\mykhailo-yermakov-photo(450).jpg 1x, img\team\mykhailo-yermakov-photo(900).jpg 2x"
+                />
+
+                <img src="img/team/olga-repina-photo(270).jpg" alt="Михайло Єрмаков" />
+              </picture>
+              
               <div class="portfolio-team__content">
                 <h3 class="portfolio-team__name">Михайло Єрмаков</h3>
                 <p class="portfolio-team__text">UI Designer</p>
