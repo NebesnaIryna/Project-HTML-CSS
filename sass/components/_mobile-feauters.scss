@@ -8,7 +8,6 @@
     margin-bottom: 30px;
     background: #f5f4fa;
     border-radius: 4px;
-    padding: 25px 192px;
   }
   
   .precedence__title {
@@ -32,6 +31,10 @@
   @media screen and (max-width:767px) {
     .precedence__title{
       text-align: center;
+    }
+
+    .precedence__icon {
+      padding: 25px 192px;
     }
   }
 
@@ -65,3 +68,4 @@
       padding: 25px 100px;
     }
 }
+

@@ -10,6 +10,7 @@
 }
 
 .head-content__title {
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
@@ -43,7 +44,7 @@
     }
 }
 
-@media (min-width:480px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     .page-head {
         padding: 118px 0;
         width: 480px;
@@ -53,8 +54,8 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(img\head\header(480).jpg);
-        background-size: 480px 400px;
+          url(/img/head/header\(480\).jpg);
+          background-size: 480px 400px;
         
     }
 
@@ -65,13 +66,14 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
             ),
-            url(img\head\header(480)@2x.jpg);
+            url(/img/head/header\(480\)@2x.jpg);
       }
     }
 }
 
 @media screen and (max-width:1199px){
   .head-content__title {
+    width: 360px;
     font-size: 26px;
     line-height: calc(42 / 26);
   }
@@ -83,7 +85,7 @@
   }
 }
 
-@media (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
   .page-head {
       padding: 118px 0;
       width: 768px;
@@ -92,8 +94,9 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(img\head\header(768).jpg);
-      background-size: 768px 400px;
+        url(/img/head/header\(768\).jpg);
+        background-size: 768px 400px;
+
   }
 
   @media (min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution:2dppx){
@@ -103,12 +106,13 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(img\head\header(768)@2x.jpg);
+          url(/img/head/header\(768\)@2x.jpg);
     }
 }
+
 }
 
-@media (min-width:1200px) and (max-width:1600px) {
+@media screen and (min-width:1200px) and (max-width:1600px) {
   .page-head {
       padding: 200px 0;
       width: 1600px;
@@ -118,8 +122,9 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(img\head\header(1600).jpg);
+      url(/img/head/header\(1600\).jpg);
       background-size: 1600px 600px;
+      
   }
 
   @media (min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution:2dppx){
@@ -129,11 +134,12 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(img\head\header(1600)@2x.jpg);
+          url(/img/head/header\(1600\)@2x.jpg);
     }
 }
 
   .head-content__title {
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
