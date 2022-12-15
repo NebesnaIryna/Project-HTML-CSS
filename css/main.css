@@ -456,7 +456,7 @@ p {
 @media screen and (max-width: 767px) {
   .page-head {
     padding: 118px 0;
-    width: 100%;
+    max-width: 767px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/head/header\(480\).jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/head/header\(480\).jpg);
@@ -486,7 +486,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-head {
     padding: 118px 0;
-    width: 100%;
+    max-width: 1199px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/head/header\(768\).jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/head/header\(768\).jpg);
     background-size: 100% 400px;
@@ -501,7 +501,7 @@ p {
 @media screen and (min-width: 1200px) {
   .page-head {
     padding: 200px 0;
-    width: 100%;
+    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/head/header\(1600\).jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/head/header\(1600\).jpg);
