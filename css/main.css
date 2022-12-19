@@ -305,6 +305,7 @@ p {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  z-index: 1;
 }
 
 .menu-container.is-open {
@@ -1522,4 +1523,10 @@ p {
   color: var(--primary-text-color);
   margin: 0;
   padding-top: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__name {
+    letter-spacing: 0.04em;
+  }
 }/*# sourceMappingURL=main.css.map */

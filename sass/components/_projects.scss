@@ -62,11 +62,17 @@
     color: var(--title-text-color);
     margin: 0;
   }
-  
+
   .project__text {
     font-size: 16px;
     line-height: 1.875;
     color: var(--primary-text-color);
     margin: 0;
     padding-top: 4px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    .project__name {
+      letter-spacing: 0.04em;
+    }
   }

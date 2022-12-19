@@ -29,10 +29,11 @@
           </button>
           
           <ul class="site-navigation__list">
-            <li><a href="./index.html" class="site-navigation__link site-navigation__link--active">Студія</a></li>
-            <li><a href="#" class="site-navigation__link">Портфоліо</a></li>
+            <li><a href="./index.html" class="site-navigation__link">Студія</a></li>
+            <li><a href="#" class="site-navigation__link site-navigation__link--active">Портфоліо</a></li>
             <li><a href="Contact" class="site-navigation__link">Контакти</a></li>
-          </ul> 
+          </ul>
+        </nav>
         <ul class="site-contacts">
           <li class="site-contacts__item">
             <a href="mailto:info@devstudio.com" class="site-contacts__link"
@@ -47,7 +48,7 @@
             </svg>+38 096 111 11 11</a>
           </li>
         </ul>
-        </nav>
+
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
               <svg width="24" height="16">
@@ -55,10 +56,10 @@
               </svg>
           </button>
           <ul class="mobile-site-navigation__list">
-            <li><a href="#" class="mobile-site-navigation__link mobile-site-navigation__link--active">Студія</a></li>
-            <li><a href="./portfolio.html" class="mobile-site-navigation__link">Портфоліо</a></li>
+            <li><a href="./index.html" class="mobile-site-navigation__link">Студія</a></li>
+            <li><a href="#" class="mobile-site-navigation__link mobile-site-navigation__link--active">Портфоліо</a></li>
             <li><a href="Contact" class="mobile-site-navigation__link">Контакти</a></li>
-          </ul>
+          </ul> 
         
         <ul class="mobile-site-contacts">
           <li class="mobile-site-contacts__item">
@@ -92,6 +93,7 @@
         </div>
       </div>
     </header>
+
     <!--Main-->
     <main>
       <!--Section-->
@@ -120,12 +122,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/addendum.jpg"
-                    alt="Addendum"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/addendum(370).jpg 1x, ./img/project/addendum(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/addendum(354).jpg 1x, ./img/project/addendum(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/addendum(450).jpg 1x, ./img/project/addendum(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/addendum(450).jpg" alt="Addendum" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -142,12 +155,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/new-orlean-golden-star-poster.jpg"
-                    alt="New Orlean vs Golden Star poster"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/new-orlean-golden-star-poster(370).jpg 1x, ./img/project/new-orlean-golden-star-poster(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/new-orlean-golden-star-poster(354).jpg 1x, ./img/project/new-orlean-golden-star-poster(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/new-orlean-golden-star-poster(450).jpg 1x, ./img/project/new-orlean-golden-star-poster(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/new-orlean-golden-star-poster(450).jpg" alt="New Orlean Golden Star Poster" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -166,12 +190,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/seafood-restaurant.jpg"
-                    alt="Seafood Restaurant"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/seafood-restaurant(370).jpg 1x, ./img/project/seafood-restaurant(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/seafood-restaurant(354).jpg 1x, ./img/project/seafood-restaurant(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/seafood-restaurant(450).jpg 1x, ./img/project/seafood-restaurant(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/seafood-restaurant(450).jpg" alt="Seafood Restaurant" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -188,12 +223,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/project-prime.jpg"
-                    alt="Project Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/project-prime(370).jpg 1x, ./img/project/project-prime(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/project-prime(354).jpg 1x, ./img/project/project-prime(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/project-prime(450).jpg 1x, ./img/project/project-prime(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/project-prime(450).jpg" alt="Project Prime" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -210,12 +256,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/project-boxes.jpg"
-                    alt="Project Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/project-boxes(370).jpg 1x, ./img/project/project-boxes(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/project-boxes(354).jpg 1x, ./img/project/project-boxes(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/project-boxes(450).jpg 1x, ./img/project/project-boxes(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/project-boxes(450).jpg" alt="Project Boxes" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -232,12 +289,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/inspiration-has-no-borders.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/inspiration-has-no-borders(370).jpg 1x, ./img/project/inspiration-has-no-borders(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/inspiration-has-no-borders(354).jpg 1x, ./img/project/inspiration-has-no-borders(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/inspiration-has-no-borders(450).jpg 1x, ./img/project/inspiration-has-no-borders(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/inspiration-has-no-borders(450).jpg" alt="Inspiration has no Borders" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -256,12 +324,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/limited-edition.jpg"
-                    alt="Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/limited-edition(370).jpg 1x, ./img/project/limited-edition(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/limited-edition(354).jpg 1x, ./img/project/limited-edition(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/limited-edition(450).jpg 1x, ./img/project/limited-edition(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/limited-edition(450).jpg" alt="Limited Edition" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -278,12 +357,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/project-lab.jpg"
-                    alt="Project LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/project-lab(370).jpg 1x, ./img/project/project-lab(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/project-lab(354).jpg 1x, ./img/project/project-lab(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/project-lab(450).jpg 1x, ./img/project/project-lab(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/project-lab(450).jpg" alt="Project LAB" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -300,12 +390,23 @@
             <li>
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="img/growing-business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/project/growing-business(370).jpg 1x, ./img/project/growing-business(740).jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/project/growing-business(354).jpg 1x, ./img/project/growing-business(708).jpg 2x"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./img/project/growing-business(450).jpg 1x, ./img/project/growing-business(900).jpg 2x"
+                    />
+    
+                    <img src="./img/project/growing-business(450).jpg" alt="Growing Business" />
+                  </picture>
                   <p class="project__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
